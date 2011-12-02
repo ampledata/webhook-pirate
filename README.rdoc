@@ -25,16 +25,12 @@ You can run hookfire, sheepie, or both:
 
 == Setup & Config
 
-1. Run:
-  <code>sudo gem install tinder active_support json rest-client</code>
-2. Edit *campfire.json.sample* and save as *campfire.json*
+  1. Run:
+    <code>sudo gem install tinder active_support json rest-client</code>
+  2. Edit *campfire.json.sample* and save as *campfire.json*
    
-  * If using sheepie: set +bot_name+ to whatever other people will address the
-   bot as.  Doesn't need to match its Campfire name, just what people type.
-
-   * If using hookfire: optionally set +key+ to random string for authorization,
-   so strangers can't guess URL.  If set, HTTP requests must include this as
-   the +key+ param.
+    * If using sheepie: set +bot_name+ to whatever other people will address the bot as.  Doesn't need to match its Campfire name, just what people type.
+    * If using hookfire: optionally set +key+ to random string for authorization, so strangers can't guess URL.  If set, HTTP requests must include this as the +key+ param.
 
 3. Run:
   ruby bin/hookfire.rb campfire.json hookfire_hooks.json &
